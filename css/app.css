@@ -3,19 +3,87 @@
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper{
+
+body{
     background-color: black;
-    max-width: 100vw;
-    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    color: white;
 }
 
-.nav__bar{
+
+/* ----- NAV ----- */
+.nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 10px;
+}
+
+.nav__speaker{
+    background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.nav__speaker:last-child{
+    margin-right: 5px;
+}
+
+/* ----- MAIN CONTENT ----- */
+
+.row{
+    display: flex;
+    gap: 5px;
+    margin: 49px;
+    flex-wrap: wrap;
 }
 
 .card{
+    position: relative;
+}
+
+.name{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+}
+
+/* ----- FOOTER ----- */
+
+.footer{
+    background-color: #222;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    /* justify-content: flex-start; */
+    align-items: center;
+    text-align: center;
+}
+
+.green{
+    color: limegreen;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.right{
+    background-color: #4a4a4a;
+    color: red;
+    display: flex;
+    align-items: center;
+    padding: 20px;
 }
